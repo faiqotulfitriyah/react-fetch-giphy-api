@@ -1,0 +1,110 @@
+.App {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.App button {
+  background-color: transparent;
+  color: #05466A;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
+}
+
+h3 {
+  margin-left: 10px;
+  color: white;
+  text-align: left;
+}
+
+.button-container {
+  margin-bottom: 20px;
+}
+
+.trend-gif {
+  background-color: black;
+  width: 50%;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#trend-gif2 {
+  width: 100%;
+}
+
+/* .gif-container {
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: masonry;
+  gap: 20px;
+
+} */
+
+.gif-container {
+  column-count: 4;
+  column-gap: 10px;
+}
+
+.gif-container > div {
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  margin-bottom: 10px;
+  break-inside: avoid;
+}
+
+.gif-container > div > img {
+  grid-row: 1 / -1;
+  grid-column: 1;
+}
+
+.search-gifs {
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gif-container img {
+  width: 100%;
+  height: auto;
+}
+
+.search-container {
+  margin: 20px;
+}
+
+.search-container input[type="text"] {
+  padding: 5px;
+  width: 400px;
+}
+
+.search-container button {
+  padding: 5px 10px;
+}
+
+.input-src {
+  display: inline-block;
+}
+
+.src-input {
+  padding-right: 40px;
+}
+
+.src-icon-conta {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
